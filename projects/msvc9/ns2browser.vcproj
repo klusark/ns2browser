@@ -170,6 +170,10 @@
 				RelativePath="..\..\src\main.cpp"
 				>
 			</File>
+			<File
+				RelativePath="..\..\src\Proxy.cpp"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
@@ -178,6 +182,10 @@
 			>
 			<File
 				RelativePath="..\..\src\Broadcaster.hpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\src\Proxy.hpp"
 				>
 			</File>
 		</Filter>

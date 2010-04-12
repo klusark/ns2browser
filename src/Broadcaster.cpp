@@ -48,7 +48,7 @@ void Broadcaster::OnReadable(const Poco::AutoPtr<Poco::Net::ReadableNotification
 	
 	printf("Packet from %s\n", socketAddress.toString().c_str());
 	if (strcmp(buffer, "\xff\xff\xff\xffTSource Engine Query\0") == 0){
-		char *buffer = "\xff\xff\xff\xffI\aThis is fake\0maps/ns2_dm.level\0ns2\0Practice\0\x38\x13\0\x10\0lw\0\0\x31.0.0.0\0\x91\x87\x69\5\xec\xdb\x09\x4c\6\x40\1\x38\x13\0\0\0\0\0\0";
+		char *buffer = "\xff\xff\xff\xffI\aThis is fake\0maps/ns2_dm.level\0ns2\0Practice\0\x38\x13\0\x10\0lw\0\0\x31.0.0.0\0\x91\xa0\x69\5\xec\xdb\x09\x4c\6\x40\1\x38\x13\0\0\0\0\0\0";
 		socket.sendTo(buffer, 111, socketAddress);
 	}else{
 		int pos = 6;
